@@ -7,7 +7,7 @@
     <body>
 
         <div class="container">
-          <h1>Books</h1>
+          <h1>Test Upload</h1>
         </div>
 
         <div class="container">
@@ -18,33 +18,10 @@
                 </tr>
             </thead>
             <tbody>
-                <?php
-                if(isset($_SESSION['email']))//Q11
-                {
-                $conn = new mysqli("localhost", "uwibooks", "db_u_pass", "uwibooks");
-                $sql = "SELECT id, title, author, type
-                        FROM books";
-                $res = $conn->query($sql);
-
-
-                while (($row = $res->fetch_assoc()) != null)
-                {
-                    echo "<tr>";
-                    echo "<td>" . $row['id'] . "</td>";
-                    echo "<td>" . $row['title'] . "</td>";
-                    echo "<td>" . $row['author'] . "</td>";
-                    echo "<td>" . $row['type'] . "</td>";
-                    echo "</tr>";
-                }
-                $conn->close();
-                }
-                else
-                echo "Please <a href =users.php";
-                ?>
+               <tr>
+                   <td>23</td>Ghost<td>Mike Myres</td><td>Horror</td>
             </tbody>
         </table>
     </div>
   </body>
 </html>
-
-
