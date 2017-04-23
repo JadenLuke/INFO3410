@@ -2,8 +2,12 @@
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
-        <title></title>
-        </head>
+        <title>Main Page</title>
+
+        <link rel="stylesheet" href="bower_components/webix/codebase/webix.css" type="text/css" media="screen" charset="utf-8">
+        <script src="bower_components/webix/codebase/webix.js" type="text/javascript" charset="utf-8"></script>
+
+    </head>
     <body>
 
         <div class="container">
