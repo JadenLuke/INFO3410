@@ -1,0 +1,20 @@
+{
+  "name": "CBO Management",
+  "homepage": "https://github.com/JadenLuke/INFO3410",
+  "authors": [
+    "JadenLuke <jaden_10110@hotmail.com>"
+  ],
+  "description": "Project INFO 3410",
+  "main": "index.php",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webix": "^4.2.4"
+  }
+}
