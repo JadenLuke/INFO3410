@@ -7,7 +7,7 @@
     <body>
 
         <div class="container">
-          <h1>Test Upload</h1>
+          <h1>Books</h1>
         </div>
 
         <div class="container">
@@ -18,29 +18,33 @@
                 </tr>
             </thead>
             <tbody>
-               <tr>
-                   <td>23</td>Ghost<td>Mike Myres</td><td>Horror</td>
+                <?php
+                // if(isset($_SESSION['email']))//Q11
+                // {
+                $conn = new mysqli("sql9.freemysqlhosting.net", "sql9170594", "vMJHFULHsl", "sql9170594");
+                $sql = "SELECT id, title, author, type
+                        FROM books";
+                $res = $conn->query($sql);
+
+
+                while (($row = $res->fetch_assoc()) != null)
+                {
+                    echo "<tr>";
+                    echo "<td>" . $row['id'] . "</td>";
+                    echo "<td>" . $row['title'] . "</td>";
+                    echo "<td>" . $row['author'] . "</td>";
+                    echo "<td>" . $row['type'] . "</td>";
+                    echo "</tr>";
+                }
+                $conn->close();
+                // //}
+                // else
+                // echo "Please <a href =users.php>";
+                ?>
             </tbody>
         </table>
     </div>
-    <?php
-
-        $dbopts = parse_url(getenv('DATABASE_URL'));
-        $app->register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider('pdo'),
-        array(
-            'pdo.server' => array(
-            'driver'   => 'pgsql',
-            'user' => $dbopts["user"],
-            'password' => $dbopts["pass"],
-            'host' => $dbopts["host"],
-            'port' => $dbopts["port"],
-            'dbname' => ltrim($dbopts["path"],'/'))
-            )
-        );
-
-
-
-    ?>
-
   </body>
 </html>
+
+
