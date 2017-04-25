@@ -51,11 +51,7 @@
 									title: "CBO Management",
 									text: text,
 									type:"alert-error",
-<<<<<<< HEAD
-									callback: function(){if(text != "Unable To Sign Up") window.location.replace ("https://cbo-management.herokuapp.com/");}
-=======
-									callback: function(){if(text != "Unable To Sign Up") window.location.replace ("https://cbo-management.herokuapp.com");}
->>>>>>> a1a5009424d07b3e7840f2a19927071bf58dfb78
+									callback: function(){if(text != "Unable To Sign Up") window.location.replace (" https://cbo-management.herokuapp.com/index.php");}//corrected file here
 								});
 						
 							
