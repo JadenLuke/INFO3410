@@ -21,7 +21,8 @@
     {view:"text",label:"User Name", name:"username", invalidMessage: "Enter Valid User Name"},
     {view:"select",label:"Organisation", name:"organisation",options:[
 		<?php
-                $conn = new mysqli("localhost", "cbo", "pass", "cbo");
+                require 'lib.php';
+				global $conn;
                 $sql = "SELECT `organization` FROM `members` GROUP BY `organization`";
                 $res = $conn->query($sql);
 				$row = $res->fetch_assoc();
