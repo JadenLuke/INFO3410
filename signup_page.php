@@ -51,22 +51,17 @@
 									title: "CBO Management",
 									text: text,
 									type:"alert-error",
+<<<<<<< HEAD
 									callback: function(){if(text != "Unable To Sign Up") window.location.replace ("https://cbo-management.herokuapp.com/");}
+=======
+									callback: function(){if(text != "Unable To Sign Up") window.location.replace ("https://cbo-management.herokuapp.com");}
+>>>>>>> a1a5009424d07b3e7840f2a19927071bf58dfb78
 								});
 						
 							
 						
 						
 					});
-					
-				
-					//create management.php to only display user type from session (check assignment 2 to send data)
-					//edit login page to encrypt pword 
-					//create Session with user type if sucessful and forward to management.php  
-				
-
-					//set background & logo
-				}}
 		}];
 
 webix.ui({
