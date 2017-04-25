@@ -30,14 +30,14 @@
 									title: "CBO Management",
 									text: text,
 									type:"alert-error",
-									callback: function(){if (text != "Incorrect User Name / Password")window.location.replace ("http://localhost:8080/webix/management.php");}
+									callback: function(){if (text != "Incorrect User Name / Password")window.location.replace ("https://cbo-management.herokuapp.com/management.php");}
 								});
 
 						});
 			}}},
 			{view:"label", label:'- or -', align:"center"},
 			{view:"button",value: "Sign Up", align:"center", width: 150,click:function(){
-				window.location.replace ("http://localhost:8080/webix/signup_page.php");
+				window.location.replace ("https://cbo-management.herokuapp.com/signup_page.php");
 			}}];
 
 
