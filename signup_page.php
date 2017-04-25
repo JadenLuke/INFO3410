@@ -59,7 +59,7 @@
 						
 						
 					});
-		}];
+		}}}];
 
 webix.ui({
 			container:"areaA",
