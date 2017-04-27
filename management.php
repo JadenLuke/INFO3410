@@ -284,7 +284,7 @@
                             title: \"Login Required\",
                             text: \"You must be logged in to view page.\",
                             type:\"alert-error\",
-                            callback: function(){window.location.replace (\"http://localhost:8080/webix/login.php\");}});
+                            callback: function(){window.location.replace (\"https://cbo-management.herokuapp.com\");}});
                     ";
                 ?>
 
